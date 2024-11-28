@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       // Get the current location
       Position position = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.high,
+        desiredAccuracy: LocationAccuracy.low,
       );
       setState(() {
         _locationMessage =
